@@ -4,53 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uranus</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 40px 20px;
-            font-family: sans-serif;
-            color: #a8eaea;
-            text-align: center;
-            text-shadow: 1px 1px 4px black;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        a {
-            display: inline-block;
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 8px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-        }
-        a:hover {
-            background: rgba(0, 0, 0, 0.75);
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-        }
-        a:active {
-            transform: scale(0.97);
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Uranus</h1>
-    <p>Uranus is the seventh planet from the Sun and rotates on its side compared to the other planets.</p>
+<body class="uranus">
 
-    <ul>
-        <li>Position from Sun: 7th</li>
-        <li>Moons: 28</li>
-        <li>Day length: 17 hours</li>
-        <li>Year length: 84 Earth years</li>
-    </ul>
-
-    <p>
+    <!-- Navigation bar: links to all 10 pages -->
+    <nav class="site-nav">
         <a href="index.html">Home</a>
-    </p>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html" aria-current="page">Uranus</a>
+    </nav>
+
+    <main class="planet-page">
+        <h1>Uranus</h1>
+        <p class="intro">Uranus is the seventh planet from the Sun. It is an ice giant with a pale blue-green color, and it spins on its side.</p>
+
+        <img class="photo" src="images/uranus1.jpg" alt="Uranus as a pale blue-green sphere">
+
+        <h2>Facts about Uranus</h2>
+        <ul class="facts">
+            <li>Diameter: about 50,724 km</li>
+            <li>Distance from the Sun: about 2.9 billion km</li>
+            <li>A day lasts about 17 hours and a year lasts 84 Earth years</li>
+            <li>It is tilted about 98 degrees, so it rolls around the Sun on its side</li>
+            <li>It has the coldest atmosphere of any planet, about -224 °C</li>
+            <li>William Herschel discovered it in 1781, and it has at least 27 moons</li>
+        </ul>
+
+        <img class="photo" src="images/uranus2.png" alt="Uranus in calibrated color photographed by the Voyager 2 spacecraft">
+    </main>
+
 </body>
 </html>

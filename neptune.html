@@ -4,53 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neptune</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 40px 20px;
-            font-family: sans-serif;
-            color: #9fc2ff;
-            text-align: center;
-            text-shadow: 1px 1px 4px black;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        a {
-            display: inline-block;
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 8px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-        }
-        a:hover {
-            background: rgba(0, 0, 0, 0.75);
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-        }
-        a:active {
-            transform: scale(0.97);
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Neptune</h1>
-    <p>Neptune is the eighth and farthest known planet from the Sun.</p>
+<body class="neptune">
 
-    <ul>
-        <li>Position from Sun: 8th</li>
-        <li>Moons: 16</li>
-        <li>Day length: 16 hours</li>
-        <li>Year length: 165 Earth years</li>
-    </ul>
-
-    <p>
+    <!-- Navigation bar: links to all 10 pages -->
+    <nav class="site-nav">
         <a href="index.html">Home</a>
-    </p>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main class="planet-page">
+        <h1>Neptune</h1>
+        <p class="intro">Neptune is the eighth and farthest planet from the Sun. It is a deep blue ice giant with the fastest winds in the solar system.</p>
+
+        <img class="photo" src="images/neptune1.jpg" alt="Neptune as a deep blue planet with white clouds">
+
+        <h2>Facts about Neptune</h2>
+        <ul class="facts">
+            <li>Diameter: about 49,244 km</li>
+            <li>Distance from the Sun: about 4.5 billion km</li>
+            <li>A day lasts about 16 hours and a year lasts about 165 Earth years</li>
+            <li>Winds can reach more than 2,000 km/h</li>
+            <li>Its largest moon, Triton, orbits backward compared to Neptune's spin</li>
+            <li>Astronomers predicted where it was with math before anyone saw it in 1846</li>
+        </ul>
+
+        <img class="photo" src="images/neptune2.png" alt="Neptune in calibrated color photographed by the Voyager 2 spacecraft">
+    </main>
+
 </body>
 </html>

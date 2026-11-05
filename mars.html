@@ -4,53 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mars</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 40px 20px;
-            font-family: sans-serif;
-            color: #ffab7a;
-            text-align: center;
-            text-shadow: 1px 1px 4px black;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        a {
-            display: inline-block;
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 8px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-        }
-        a:hover {
-            background: rgba(0, 0, 0, 0.75);
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-        }
-        a:active {
-            transform: scale(0.97);
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Mars</h1>
-    <p>Mars is the fourth planet from the Sun, known as the "Red Planet" because of its iron oxide surface.</p>
+<body class="mars">
 
-    <ul>
-        <li>Position from Sun: 4th</li>
-        <li>Moons: 2</li>
-        <li>Day length: 24.6 hours</li>
-        <li>Year length: 687 Earth days</li>
-    </ul>
-
-    <p>
+    <!-- Navigation bar: links to all 10 pages -->
+    <nav class="site-nav">
         <a href="index.html">Home</a>
-    </p>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html" aria-current="page">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main class="planet-page">
+        <h1>Mars</h1>
+        <p class="intro">Mars is the fourth planet from the Sun and is known as the Red Planet. Iron oxide, or rust, in its soil gives it the reddish color.</p>
+
+        <img class="photo" src="images/mars1.jpg" alt="Mars in true color showing its red surface and dark regions">
+
+        <h2>Facts about Mars</h2>
+        <ul class="facts">
+            <li>Diameter: about 6,779 km, roughly half the size of Earth</li>
+            <li>Distance from the Sun: about 228 million km</li>
+            <li>A day lasts about 24.6 hours and a year lasts 687 Earth days</li>
+            <li>It has two small moons, Phobos and Deimos</li>
+            <li>The average temperature is about -63 °C</li>
+            <li>Olympus Mons, its tallest volcano, is about three times taller than Mount Everest</li>
+        </ul>
+
+        <img class="photo" src="images/mars2.jpg" alt="The giant volcano Olympus Mons on Mars seen from above">
+    </main>
+
 </body>
 </html>

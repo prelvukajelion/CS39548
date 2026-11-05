@@ -46,3 +46,62 @@ body {
     background: #3355aa;
     font-weight: bold;
 }
+
+/* ==========================================================
+   Planet pages (sun, moon, and the eight planets)
+   ========================================================== */
+
+/* Layout shared by every planet page */
+.planet-page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.planet-page h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.intro {
+    line-height: 1.6;
+}
+
+.photo {
+    width: 320px;
+    max-width: 100%;
+    margin: 16px 8px;
+    border-radius: 10px;
+}
+
+/* Facts list: left-aligned so it is easy to read */
+.facts {
+    text-align: left;
+    line-height: 1.8;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+/* ---------- Colors and fonts for each page (set by <body class="...">) ---------- */
+body.sun     { background-color: #3b1d00; font-family: 'Trebuchet MS', sans-serif; }
+body.moon    { background-color: #1c1c1c; font-family: 'Courier New', monospace; }
+body.earth   { background-color: #0b2a45; font-family: Georgia, serif; }
+body.mercury { background-color: #2b2622; font-family: 'Lucida Console', monospace; }
+body.venus   { background-color: #3a2a10; font-family: 'Palatino Linotype', serif; }
+body.mars    { background-color: #3a1408; font-family: Verdana, sans-serif; }
+body.jupiter { background-color: #3a2814; font-family: 'Times New Roman', serif; }
+body.saturn  { background-color: #3a3118; font-family: Garamond, serif; }
+body.uranus  { background-color: #0f3333; font-family: Arial, sans-serif; }
+body.neptune { background-color: #0e1d4a; font-family: Tahoma, sans-serif; }
+
+/* Heading color for each page */
+body.sun h1, body.sun h2         { color: #ffd34d; }
+body.moon h1, body.moon h2       { color: #cfcfcf; }
+body.earth h1, body.earth h2     { color: #7fc8f8; }
+body.mercury h1, body.mercury h2 { color: #d8cdbd; }
+body.venus h1, body.venus h2     { color: #f2d9a0; }
+body.mars h1, body.mars h2       { color: #ff8a5c; }
+body.jupiter h1, body.jupiter h2 { color: #e3bd8d; }
+body.saturn h1, body.saturn h2   { color: #f1e2ab; }
+body.uranus h1, body.uranus h2   { color: #a8eaea; }
+body.neptune h1, body.neptune h2 { color: #9fc2ff; }

@@ -4,53 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jupiter</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 40px 20px;
-            font-family: sans-serif;
-            color: #e3bd8d;
-            text-align: center;
-            text-shadow: 1px 1px 4px black;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        a {
-            display: inline-block;
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 8px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-        }
-        a:hover {
-            background: rgba(0, 0, 0, 0.75);
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-        }
-        a:active {
-            transform: scale(0.97);
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Jupiter</h1>
-    <p>Jupiter is the fifth planet from the Sun and the largest planet in the solar system.</p>
+<body class="jupiter">
 
-    <ul>
-        <li>Position from Sun: 5th</li>
-        <li>Moons: 95</li>
-        <li>Day length: 10 hours</li>
-        <li>Year length: 12 Earth years</li>
-    </ul>
-
-    <p>
+    <!-- Navigation bar: links to all 10 pages -->
+    <nav class="site-nav">
         <a href="index.html">Home</a>
-    </p>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html" aria-current="page">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main class="planet-page">
+        <h1>Jupiter</h1>
+        <p class="intro">Jupiter is the fifth planet from the Sun and the largest in the solar system. It is a giant ball of gas with colorful storm bands.</p>
+
+        <img class="photo" src="images/jupiter1.jpg" alt="Jupiter with its Great Red Spot and bands of orange and white clouds">
+
+        <h2>Facts about Jupiter</h2>
+        <ul class="facts">
+            <li>Diameter: about 139,820 km, more than 1,300 Earths could fit inside it</li>
+            <li>Distance from the Sun: about 778 million km</li>
+            <li>A day lasts just under 10 hours and a year lasts about 12 Earth years</li>
+            <li>It has more than 90 moons</li>
+            <li>The Great Red Spot is a storm larger than Earth that has lasted for centuries</li>
+            <li>It is made mostly of hydrogen and helium and has no solid surface</li>
+        </ul>
+
+        <img class="photo" src="images/jupiter2.jpg" alt="A close view of Jupiter's swirling cloud bands">
+    </main>
+
 </body>
 </html>

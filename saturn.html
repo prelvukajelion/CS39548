@@ -4,53 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saturn</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 40px 20px;
-            font-family: sans-serif;
-            color: #f1e2ab;
-            text-align: center;
-            text-shadow: 1px 1px 4px black;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        a {
-            display: inline-block;
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 8px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-        }
-        a:hover {
-            background: rgba(0, 0, 0, 0.75);
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-        }
-        a:active {
-            transform: scale(0.97);
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Saturn</h1>
-    <p>Saturn is the sixth planet from the Sun, famous for its large ring system.</p>
+<body class="saturn">
 
-    <ul>
-        <li>Position from Sun: 6th</li>
-        <li>Moons: 146</li>
-        <li>Day length: 10.7 hours</li>
-        <li>Year length: 29 Earth years</li>
-    </ul>
-
-    <p>
+    <!-- Navigation bar: links to all 10 pages -->
+    <nav class="site-nav">
         <a href="index.html">Home</a>
-    </p>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html" aria-current="page">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main class="planet-page">
+        <h1>Saturn</h1>
+        <p class="intro">Saturn is the sixth planet from the Sun and is famous for its bright rings. It is the second largest planet.</p>
+
+        <img class="photo" src="images/saturn1.jpg" alt="Saturn and its rings photographed by the Cassini spacecraft">
+
+        <h2>Facts about Saturn</h2>
+        <ul class="facts">
+            <li>Diameter: about 116,460 km</li>
+            <li>Distance from the Sun: about 1.4 billion km</li>
+            <li>A day lasts about 10.7 hours and a year lasts about 29 Earth years</li>
+            <li>It has more than 140 moons, and the largest is Titan</li>
+            <li>Its rings are made mostly of water ice and rock</li>
+            <li>Saturn is less dense than water, so it would float in a big enough bathtub</li>
+        </ul>
+
+        <img class="photo" src="images/saturn2.jpg" alt="Saturn seen from the Cassini orbiter with its rings stretching across the image">
+    </main>
+
 </body>
 </html>

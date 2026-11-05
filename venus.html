@@ -4,53 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venus</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 40px 20px;
-            font-family: sans-serif;
-            color: #f2d9a0;
-            text-align: center;
-            text-shadow: 1px 1px 4px black;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/PIA23791-Venus-RealAndEnhancedContrastViews-20200608_%28cropped%29.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        a {
-            display: inline-block;
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 8px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-        }
-        a:hover {
-            background: rgba(0, 0, 0, 0.75);
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-        }
-        a:active {
-            transform: scale(0.97);
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Venus</h1>
-    <p>Venus is the second planet from the Sun and the hottest planet due to its thick atmosphere.</p>
+<body class="venus">
 
-    <ul>
-        <li>Position from Sun: 2nd</li>
-        <li>Moons: 0</li>
-        <li>Day length: 243 Earth days</li>
-        <li>Year length: 225 Earth days</li>
-    </ul>
-
-    <p>
+    <!-- Navigation bar: links to all 10 pages -->
+    <nav class="site-nav">
         <a href="index.html">Home</a>
-    </p>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html" aria-current="page">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main class="planet-page">
+        <h1>Venus</h1>
+        <p class="intro">Venus is the second planet from the Sun. It is wrapped in thick clouds that trap heat, which makes it the hottest planet.</p>
+
+        <img class="photo" src="images/venus1.jpg" alt="Venus covered in thick yellowish clouds">
+
+        <h2>Facts about Venus</h2>
+        <ul class="facts">
+            <li>Diameter: about 12,104 km, almost the same size as Earth</li>
+            <li>Distance from the Sun: about 108 million km</li>
+            <li>Surface temperature: about 465 °C, hotter than Mercury</li>
+            <li>A day on Venus (243 Earth days) is longer than its year (225 Earth days)</li>
+            <li>It spins backward compared to most planets</li>
+            <li>Its air is mostly carbon dioxide, with pressure about 90 times Earth's</li>
+        </ul>
+
+        <img class="photo" src="images/venus2.jpg" alt="Venus photographed by the Mariner 10 spacecraft">
+    </main>
+
 </body>
 </html>

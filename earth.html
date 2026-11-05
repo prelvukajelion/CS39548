@@ -4,53 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Earth</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 40px 20px;
-            font-family: sans-serif;
-            color: #a9d6f5;
-            text-align: center;
-            text-shadow: 1px 1px 4px black;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/6/61/Blue_Marble_Western_Hemisphere.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        a {
-            display: inline-block;
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 8px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-        }
-        a:hover {
-            background: rgba(0, 0, 0, 0.75);
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-        }
-        a:active {
-            transform: scale(0.97);
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Earth</h1>
-    <p>Earth is the third planet from the Sun and the only known planet to support life.</p>
+<body class="earth">
 
-    <ul>
-        <li>Position from Sun: 3rd</li>
-        <li>Moons: 1</li>
-        <li>Day length: 24 hours</li>
-        <li>Year length: 365 days</li>
-    </ul>
-
-    <p>
+    <!-- Navigation bar: links to all 10 pages -->
+    <nav class="site-nav">
         <a href="index.html">Home</a>
-    </p>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html" aria-current="page">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <main class="planet-page">
+        <h1>Earth</h1>
+        <p class="intro">Earth is the third planet from the Sun and the only world we know of that has life. Water covers most of its surface.</p>
+
+        <img class="photo" src="images/earth1.jpg" alt="Earth seen from space showing the Americas, blue oceans and white clouds">
+
+        <h2>Facts about Earth</h2>
+        <ul class="facts">
+            <li>Diameter: about 12,742 km</li>
+            <li>Distance from the Sun: about 150 million km</li>
+            <li>A day lasts 24 hours and a year lasts about 365.25 days</li>
+            <li>About 71% of its surface is covered by water</li>
+            <li>It has one moon</li>
+            <li>Its air is about 78% nitrogen and 21% oxygen</li>
+        </ul>
+
+        <img class="photo" src="images/earth2.jpg" alt="Earth as a full blue sphere photographed by the Apollo 17 astronauts">
+    </main>
+
 </body>
 </html>
