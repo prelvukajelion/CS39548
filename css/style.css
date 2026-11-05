@@ -73,17 +73,66 @@ body {
     margin: 0 auto;
 }
 
+/* landscape picture behind each page, the color on top makes it see-through */
+body.sun, body.moon, body.earth, body.mercury, body.venus,
+body.mars, body.jupiter, body.saturn, body.uranus, body.neptune {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 /* background color and font for each page */
-body.sun     { background-color: #3b1d00; font-family: 'Trebuchet MS', sans-serif; }
-body.moon    { background-color: #1c1c1c; font-family: 'Courier New', monospace; }
-body.earth   { background-color: #0b2a45; font-family: Georgia, serif; }
-body.mercury { background-color: #2b2622; font-family: 'Lucida Console', monospace; }
-body.venus   { background-color: #3a2a10; font-family: 'Palatino Linotype', serif; }
-body.mars    { background-color: #3a1408; font-family: Verdana, sans-serif; }
-body.jupiter { background-color: #3a2814; font-family: 'Times New Roman', serif; }
-body.saturn  { background-color: #3a3118; font-family: Garamond, serif; }
-body.uranus  { background-color: #0f3333; font-family: Arial, sans-serif; }
-body.neptune { background-color: #0e1d4a; font-family: Tahoma, sans-serif; }
+body.sun {
+    background-color: #3b1d00;
+    background-image: linear-gradient(rgba(59, 29, 0, 0.75), rgba(59, 29, 0, 0.75)), url('../images/sun-bg.jpg');
+    font-family: 'Trebuchet MS', sans-serif;
+}
+body.moon {
+    background-color: #1c1c1c;
+    background-image: linear-gradient(rgba(28, 28, 28, 0.75), rgba(28, 28, 28, 0.75)), url('../images/moon-bg.jpg');
+    font-family: 'Courier New', monospace;
+}
+body.earth {
+    background-color: #0b2a45;
+    background-image: linear-gradient(rgba(11, 42, 69, 0.75), rgba(11, 42, 69, 0.75)), url('../images/earth-bg.jpg');
+    font-family: Georgia, serif;
+}
+body.mercury {
+    background-color: #2b2622;
+    background-image: linear-gradient(rgba(43, 38, 34, 0.75), rgba(43, 38, 34, 0.75)), url('../images/mercury-bg.jpg');
+    font-family: 'Lucida Console', monospace;
+}
+body.venus {
+    background-color: #3a2a10;
+    background-image: linear-gradient(rgba(58, 42, 16, 0.75), rgba(58, 42, 16, 0.75)), url('../images/venus-bg.jpg');
+    font-family: 'Palatino Linotype', serif;
+}
+body.mars {
+    background-color: #3a1408;
+    background-image: linear-gradient(rgba(58, 20, 8, 0.75), rgba(58, 20, 8, 0.75)), url('../images/mars-bg.jpg');
+    font-family: Verdana, sans-serif;
+}
+body.jupiter {
+    background-color: #3a2814;
+    background-image: linear-gradient(rgba(58, 40, 20, 0.75), rgba(58, 40, 20, 0.75)), url('../images/jupiter-bg.jpg');
+    font-family: 'Times New Roman', serif;
+}
+body.saturn {
+    background-color: #3a3118;
+    background-image: linear-gradient(rgba(58, 49, 24, 0.75), rgba(58, 49, 24, 0.75)), url('../images/saturn-bg.jpg');
+    font-family: Garamond, serif;
+}
+body.uranus {
+    background-color: #0f3333;
+    background-image: linear-gradient(rgba(15, 51, 51, 0.75), rgba(15, 51, 51, 0.75)), url('../images/uranus-bg.jpg');
+    font-family: Arial, sans-serif;
+}
+body.neptune {
+    background-color: #0e1d4a;
+    background-image: linear-gradient(rgba(14, 29, 74, 0.75), rgba(14, 29, 74, 0.75)), url('../images/neptune-bg.jpg');
+    font-family: Tahoma, sans-serif;
+}
 
 /* heading colors */
 body.sun h1, body.sun h2         { color: #ffd34d; }
