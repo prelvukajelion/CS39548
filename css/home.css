@@ -1,13 +1,9 @@
-/* ==========================================================
-   home.css - styles only used by index.html (the landing page)
-   ========================================================== */
-
-/* Black page background to match the solar system picture */
+/* black background */
 body {
     background-color: black;
 }
 
-/* ---------- Title and intro ---------- */
+/* title and intro */
 .home-header {
     padding: 24px 16px 0;
 }
@@ -27,13 +23,13 @@ body {
     color: #c5d4e6;
 }
 
-/* ---------- Solar system picture with clickable planets ---------- */
-/* The box is the same size as the picture, so percentages line up with it */
+/* solar system picture with clickable planets */
+/* same size as the picture so the percentages line up, overflow hidden cuts off the Sun's circle */
 .system {
     position: relative;
     max-width: 1300px;
     margin: 20px auto;
-    overflow: hidden;             /* the Sun's circle is bigger than the picture, so cut it off */
+    overflow: hidden;
 }
 
 .system img.solar-system {
@@ -41,9 +37,7 @@ body {
     display: block;
 }
 
-/* Each planet link is an invisible circle placed over its planet.
-   Its size and position are set in index.html (in %), so it
-   always stays on the planet when the page is resized. */
+/* each planet link is a circle over the planet, size and position are in index.html */
 .hotspot {
     position: absolute;
     box-sizing: border-box;
@@ -56,14 +50,14 @@ body {
     box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.7);
 }
 
-/* The Moon photo fills its circle */
+/* moon photo fills its circle */
 .hotspot img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
-/* ---------- Pop quiz ---------- */
+/* pop quiz */
 #quiz-btn {
     margin-bottom: 40px;
     padding: 10px 22px;
@@ -78,13 +72,13 @@ body {
     background: #ffe9b8;
 }
 
-/* The quiz is a pop-up: it floats over the page so it is always visible */
+/* quiz box floats over the page, above the nav bar */
 #quiz-box {
     position: fixed;
     top: 120px;
     left: 0;
     right: 0;
-    z-index: 20;                  /* above the navigation bar */
+    z-index: 20;
     width: 90%;
     max-width: 500px;
     margin: 0 auto;
@@ -103,7 +97,7 @@ body {
     cursor: pointer;
 }
 
-/* Hidden until the quiz button is pressed (JS adds/removes this class) */
+/* hides the quiz until the button is clicked */
 .hidden {
     display: none;
 }

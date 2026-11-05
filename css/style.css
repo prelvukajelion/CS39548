@@ -1,21 +1,16 @@
-/* ==========================================================
-   style.css - shared styles used by every page of the site
-   (base page look + the navigation bar)
-   ========================================================== */
-
-/* ---------- Base ---------- */
+/* dark background to match the solar system picture */
 body {
     margin: 0;
     min-height: 100vh;
-    background: #1f2120;          /* matches the dark background of the solar system image */
+    background: #1f2120;
     color: #e8f1f2;
     font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
     text-align: center;
 }
 
-/* ---------- Navigation bar (same markup on every page) ---------- */
+/* navigation bar, stays at the top when scrolling */
 .site-nav {
-    position: sticky;             /* stays visible while scrolling */
+    position: sticky;
     top: 0;
     z-index: 10;
     display: flex;
@@ -41,17 +36,13 @@ body {
     transform: scale(1.06);
 }
 
-/* Highlights the link of the page you are currently on */
+/* link for the page you are on */
 .site-nav a[aria-current="page"] {
     background: #3355aa;
     font-weight: bold;
 }
 
-/* ==========================================================
-   Planet pages (sun, moon, and the eight planets)
-   ========================================================== */
-
-/* Layout shared by every planet page */
+/* layout for the planet pages */
 .planet-page {
     max-width: 700px;
     margin: 0 auto;
@@ -74,7 +65,7 @@ body {
     border-radius: 10px;
 }
 
-/* Facts list: left-aligned so it is easy to read */
+/* facts list */
 .facts {
     text-align: left;
     line-height: 1.8;
@@ -82,7 +73,7 @@ body {
     margin: 0 auto;
 }
 
-/* ---------- Colors and fonts for each page (set by <body class="...">) ---------- */
+/* background color and font for each page */
 body.sun     { background-color: #3b1d00; font-family: 'Trebuchet MS', sans-serif; }
 body.moon    { background-color: #1c1c1c; font-family: 'Courier New', monospace; }
 body.earth   { background-color: #0b2a45; font-family: Georgia, serif; }
@@ -94,7 +85,7 @@ body.saturn  { background-color: #3a3118; font-family: Garamond, serif; }
 body.uranus  { background-color: #0f3333; font-family: Arial, sans-serif; }
 body.neptune { background-color: #0e1d4a; font-family: Tahoma, sans-serif; }
 
-/* Heading color for each page */
+/* heading colors */
 body.sun h1, body.sun h2         { color: #ffd34d; }
 body.moon h1, body.moon h2       { color: #cfcfcf; }
 body.earth h1, body.earth h2     { color: #7fc8f8; }
