@@ -1,16 +1,22 @@
 // home.js - interactivity for the landing page (index.html)
-// The "Pop quiz" button shows or hides a multiple-choice question.
+// The "Pop quiz" button opens a pop-up with a multiple-choice question.
 // Clicking an answer tells you if it is right or wrong.
 
 const quizBtn = document.getElementById('quiz-btn');
 const quizBox = document.getElementById('quiz-box');
 const quizResult = document.getElementById('quiz-result');
+const closeBtn = document.getElementById('quiz-close');
 const answerButtons = document.querySelectorAll('.quiz-answers button');
 
 // Show or hide the quiz when the button is clicked
 quizBtn.addEventListener('click', function () {
     quizBox.classList.toggle('hidden');
     quizResult.textContent = '';   // clear the old result
+});
+
+// Close the pop-up with the Close button
+closeBtn.addEventListener('click', function () {
+    quizBox.classList.add('hidden');
 });
 
 // Check the answer when one of the answer buttons is clicked

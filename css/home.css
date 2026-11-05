@@ -65,6 +65,7 @@ body {
 
 /* ---------- Pop quiz ---------- */
 #quiz-btn {
+    margin-bottom: 40px;
     padding: 10px 22px;
     font-size: 1rem;
     background: #f2d9a0;
@@ -77,13 +78,29 @@ body {
     background: #ffe9b8;
 }
 
+/* The quiz is a pop-up: it floats over the page so it is always visible */
 #quiz-box {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    z-index: 20;                  /* above the navigation bar */
+    width: 90%;
     max-width: 500px;
-    margin: 16px auto 40px;
-    padding: 16px;
-    background: rgba(51, 85, 170, 0.25);
-    border: 1px solid #3355aa;
+    margin: 0 auto;
+    padding: 20px;
+    background: #0a0a23;
+    border: 2px solid #3355aa;
     border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+}
+
+#quiz-close {
+    margin-top: 10px;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 /* Hidden until the quiz button is pressed (JS adds/removes this class) */
