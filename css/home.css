@@ -2,6 +2,11 @@
    home.css - styles only used by index.html (the landing page)
    ========================================================== */
 
+/* Black page background to match the solar system picture */
+body {
+    background-color: black;
+}
+
 /* ---------- Title and intro ---------- */
 .home-header {
     padding: 24px 16px 0;
@@ -28,6 +33,7 @@
     position: relative;
     max-width: 1300px;
     margin: 20px auto;
+    overflow: hidden;             /* the Sun's circle is bigger than the picture, so cut it off */
 }
 
 .system img.solar-system {
@@ -35,13 +41,12 @@
     display: block;
 }
 
-/* Each planet link is a small invisible circle placed over the planet.
-   The negative margins pull the circle back so its center is on the spot. */
+/* Each planet link is an invisible circle placed over its planet.
+   Its size and position are set in index.html (in %), so it
+   always stays on the planet when the page is resized. */
 .hotspot {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    margin: -15px 0 0 -15px;
+    box-sizing: border-box;
     border-radius: 50%;
     border: 2px solid transparent;
 }
@@ -49,13 +54,6 @@
 .hotspot:hover {
     border-color: white;
     box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.7);
-}
-
-/* Bigger circles for the Sun, Jupiter and Saturn */
-.hotspot.big {
-    width: 50px;
-    height: 50px;
-    margin: -25px 0 0 -25px;
 }
 
 /* The Moon photo fills its circle */
