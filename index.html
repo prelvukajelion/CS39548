@@ -4,70 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Solar System</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            background: #0a0a23 url('https://upload.wikimedia.org/wikipedia/commons/c/cb/Solar_System_Illustration_%28rubin-20220314-Solar-System-hero%29.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        h1 {
-            font-size: 3.5rem;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            margin: 20px 0 50px;
-            text-shadow: 2px 2px 10px black, 0 0 30px rgba(120, 170, 255, 0.6);
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        a {
-            display: inline-block;
-            width: 150px;
-            color: #0a0a23;
-            background: #3355aa;
-            padding: 8px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-        }
-        a:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-        }
-        a:active {
-            transform: scale(0.97);
-        }
-        .mercury { background: #d8cdbd; }
-        .venus   { background: #f2d9a0; }
-        .earth   { background: #a9d6f5; }
-        .mars    { background: #ffab7a; }
-        .jupiter { background: #e3bd8d; }
-        .saturn  { background: #f1e2ab; }
-        .uranus  { background: #a8eaea; }
-        .neptune { background: #9fc2ff; }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/home.js" defer></script>
 </head>
 <body>
-    <h1>The Solar System</h1>
 
-    <ul>
-        <li><a class="mercury" href="mercury.html">Mercury</a></li>
-        <li><a class="venus" href="venus.html">Venus</a></li>
-        <li><a class="earth" href="earth.html">Earth</a></li>
-        <li><a class="mars" href="mars.html">Mars</a></li>
-        <li><a class="jupiter" href="jupiter.html">Jupiter</a></li>
-        <li><a class="saturn" href="saturn.html">Saturn</a></li>
-        <li><a class="uranus" href="uranus.html">Uranus</a></li>
-        <li><a class="neptune" href="neptune.html">Neptune</a></li>
-    </ul>
+    <!-- Navigation bar: links to all 10 pages -->
+    <nav class="site-nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <header class="home-header">
+        <h1>The Solar System</h1>
+        <p class="intro">
+            Our solar system is made up of the Sun and everything that travels around it:
+            eight planets, hundreds of moons, and countless asteroids and comets.
+            It formed about 4.6 billion years ago from a spinning cloud of gas and dust.
+            Click any planet below, or the Sun and Moon, to begin exploring.
+        </p>
+    </header>
+
+    <main>
+        <!-- Each link is placed over one body in the picture using top and left (in %) -->
+        <div class="system">
+            <img class="solar-system" src="images/solar-system.jpg"
+                 alt="Illustration of the solar system with the Sun in the center and the planets on circular orbits around it">
+
+            <a class="hotspot big" href="sun.html" style="top: 50.2%; left: 49.9%;" title="Sun"></a>
+            <a class="hotspot" href="mercury.html" style="top: 51.4%; left: 53.2%;" title="Mercury"></a>
+            <a class="hotspot" href="venus.html" style="top: 53.6%; left: 43.7%;" title="Venus"></a>
+            <a class="hotspot" href="earth.html" style="top: 39.8%; left: 44.8%;" title="Earth"></a>
+            <a class="hotspot" href="moon.html" style="top: 35%; left: 47%;" title="Moon">
+                <img src="images/moon-icon.jpg" alt="Photo of the full Moon">
+            </a>
+            <a class="hotspot" href="mars.html" style="top: 34.6%; left: 52.5%;" title="Mars"></a>
+            <a class="hotspot big" href="jupiter.html" style="top: 41%; left: 64.3%;" title="Jupiter"></a>
+            <a class="hotspot big" href="saturn.html" style="top: 68.9%; left: 35.5%;" title="Saturn"></a>
+            <a class="hotspot" href="uranus.html" style="top: 77.6%; left: 64.5%;" title="Uranus"></a>
+            <a class="hotspot" href="neptune.html" style="top: 42.9%; left: 73.5%;" title="Neptune"></a>
+        </div>
+
+        <!-- Pop quiz: the button shows/hides the box (see js/home.js) -->
+        <button id="quiz-btn" type="button">Pop quiz</button>
+
+        <div id="quiz-box" class="hidden">
+            <p>Which world was reclassified from a planet to a dwarf planet in 2006?</p>
+            <div class="quiz-answers">
+                <button type="button">Ceres</button>
+                <button type="button">Pluto</button>
+                <button type="button">Eris</button>
+                <button type="button">Neptune</button>
+            </div>
+            <p id="quiz-result"></p>
+        </div>
+    </main>
+
 </body>
 </html>

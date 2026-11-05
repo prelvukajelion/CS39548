@@ -1,0 +1,112 @@
+/* ==========================================================
+   home.css - styles only used by index.html (the landing page)
+   ========================================================== */
+
+/* ---------- Title and intro ---------- */
+.home-header {
+    padding: 24px 16px 0;
+}
+
+.home-header h1 {
+    margin: 0 0 10px;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 30px rgba(120, 170, 255, 0.6);
+}
+
+.intro {
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #c5d4e6;
+}
+
+/* ---------- Solar system picture with clickable planets ---------- */
+/* The box is the same size as the picture, so percentages line up with it */
+.system {
+    position: relative;
+    max-width: 1300px;
+    margin: 20px auto;
+}
+
+.system img.solar-system {
+    width: 100%;
+    display: block;
+}
+
+/* Each planet link is a small invisible circle placed over the planet.
+   The negative margins pull the circle back so its center is on the spot. */
+.hotspot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.hotspot:hover {
+    border-color: white;
+    box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.7);
+}
+
+/* Bigger circles for the Sun, Jupiter and Saturn */
+.hotspot.big {
+    width: 50px;
+    height: 50px;
+    margin: -25px 0 0 -25px;
+}
+
+/* The Moon photo fills its circle */
+.hotspot img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* ---------- Pop quiz ---------- */
+#quiz-btn {
+    padding: 10px 22px;
+    font-size: 1rem;
+    background: #f2d9a0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#quiz-btn:hover {
+    background: #ffe9b8;
+}
+
+#quiz-box {
+    max-width: 500px;
+    margin: 16px auto 40px;
+    padding: 16px;
+    background: rgba(51, 85, 170, 0.25);
+    border: 1px solid #3355aa;
+    border-radius: 10px;
+}
+
+/* Hidden until the quiz button is pressed (JS adds/removes this class) */
+.hidden {
+    display: none;
+}
+
+.quiz-answers button {
+    margin: 4px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.quiz-answers button:hover {
+    background: #a8eaea;
+}
+
+#quiz-result {
+    min-height: 1.5em;
+    font-weight: bold;
+}

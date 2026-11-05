@@ -1,0 +1,48 @@
+/* ==========================================================
+   style.css - shared styles used by every page of the site
+   (base page look + the navigation bar)
+   ========================================================== */
+
+/* ---------- Base ---------- */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #1f2120;          /* matches the dark background of the solar system image */
+    color: #e8f1f2;
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+/* ---------- Navigation bar (same markup on every page) ---------- */
+.site-nav {
+    position: sticky;             /* stays visible while scrolling */
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px;
+    background: rgba(10, 10, 35, 0.92);
+    border-bottom: 1px solid #3355aa;
+}
+
+.site-nav a {
+    color: #e8f1f2;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+    background: #3355aa;
+    transform: scale(1.06);
+}
+
+/* Highlights the link of the page you are currently on */
+.site-nav a[aria-current="page"] {
+    background: #3355aa;
+    font-weight: bold;
+}
