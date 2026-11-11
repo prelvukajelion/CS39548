@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sun</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/sun.js" defer></script>
 </head>
 <body class="sun">
 
@@ -30,10 +31,14 @@
         <!-- three photos in one row -->
         <div class="photos">
             <img class="side-photo" src="images/sun-left.png" alt="Close-up of the Sun's glowing surface with bright solar flares">
-            <img class="photo" src="images/sun1.png" alt="The Sun glowing in space as seen by a NASA solar observatory">
+            <img id="main-photo" class="photo" src="images/sun1.png" alt="The Sun glowing in space as seen by a NASA solar observatory">
             <img class="side-photo" src="images/sun-right.png" alt="A giant eruption of hot gas rising off the surface of the Sun">
         </div>
 
+        <!-- JavaScript feature -->
+        <div class="feature">
+            <button id="glow-btn" type="button">Start glow</button>
+        </div>
         <h2>Facts about Sun</h2>
         <ul class="facts">
             <li>Diameter: about 1.39 million km, 109 times wider than Earth</li>
