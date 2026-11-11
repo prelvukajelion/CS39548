@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mars</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/mars.js" defer></script>
 </head>
 <body class="mars">
 
@@ -30,10 +31,17 @@
         <!-- three photos in one row -->
         <div class="photos">
             <img class="side-photo" src="images/mars-left.png" alt="Mars with the huge Valles Marineris canyon across its middle">
-            <img class="photo" src="images/mars1.png" alt="Mars in true color showing its red surface and dark regions">
+            <img id="main-photo" class="photo" src="images/mars1.png" alt="Mars in true color showing its red surface and dark regions">
             <img class="side-photo" src="images/mars-right.png" alt="Olympus Mons, the giant volcano on Mars, seen from above">
         </div>
 
+        <!-- JavaScript feature -->
+        <div class="feature">
+            <p>What would you weigh on Mars?</p>
+            <input id="weight" type="number" min="0" placeholder="lbs">
+            <button id="calc-btn" type="button">Calculate</button>
+            <p id="weight-result" class="output"></p>
+        </div>
         <h2>Facts about Mars</h2>
         <ul class="facts">
             <li>Diameter: about 6,779 km, roughly half the size of Earth</li>
