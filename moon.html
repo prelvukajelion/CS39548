@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moon</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/moon.js" defer></script>
 </head>
 <body class="moon">
 
@@ -30,10 +31,15 @@
         <!-- three photos in one row -->
         <div class="photos">
             <img class="side-photo" src="images/moon-left.png" alt="Earthrise: the Earth seen above the surface of the Moon">
-            <img class="photo" src="images/moon1.png" alt="A photo of the full Moon showing its dark plains and bright craters">
+            <img id="main-photo" class="photo" src="images/moon1.png" alt="A photo of the full Moon showing its dark plains and bright craters">
             <img class="side-photo" src="images/moon-right.png" alt="Astronaut Buzz Aldrin walking on the Moon">
         </div>
 
+        <!-- JavaScript feature -->
+        <div class="feature">
+            <button id="phase-btn" type="button">Next phase</button>
+            <p id="phase-name" class="output">Phase: Full Moon</p>
+        </div>
         <h2>Facts about Moon</h2>
         <ul class="facts">
             <li>Diameter: about 3,474 km, roughly one quarter the size of Earth</li>
