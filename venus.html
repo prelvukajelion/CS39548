@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venus</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/venus.js" defer></script>
 </head>
 <body class="venus">
 
@@ -30,10 +31,19 @@
         <!-- three photos in one row -->
         <div class="photos">
             <img class="side-photo" src="images/venus-left.png" alt="3D view of the volcano Maat Mons on Venus">
-            <img class="photo" src="images/venus1.png" alt="Venus covered in thick yellowish clouds">
+            <img id="main-photo" class="photo" src="images/venus1.png" alt="Venus covered in thick yellowish clouds">
             <img class="side-photo" src="images/venus-right.png" alt="3D view of the volcano Sapas Mons on Venus">
         </div>
 
+        <!-- JavaScript feature -->
+        <div class="feature">
+            <button id="fact-btn" type="button">Fun fact</button>
+        </div>
+
+        <div id="fact-modal" class="modal hidden">
+            <p>A day on Venus is longer than its year. It spins so slowly that one turn takes about 243 Earth days, but it circles the Sun in about 225.</p>
+            <button id="fact-close" type="button">Close</button>
+        </div>
         <h2>Facts about Venus</h2>
         <ul class="facts">
             <li>Diameter: about 12,104 km, almost the same size as Earth</li>
