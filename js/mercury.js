@@ -1,3 +1,5 @@
+// Mercury page: Read more button that shows or hides an extra paragraph
+
 // get the elements
 const moreBtn = document.getElementById('more-btn');
 const moreText = document.getElementById('more-text');

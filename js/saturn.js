@@ -1,3 +1,5 @@
+// Saturn page: button that zooms the Saturn photo in and out
+
 // get the elements
 const zoomBtn = document.getElementById('zoom-btn');
 const saturnPhoto = document.getElementById('main-photo');

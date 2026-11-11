@@ -1,3 +1,5 @@
+// Home page: pop quiz that opens in a box, checks the answer and can be closed
+
 // get the elements
 const quizBtn = document.getElementById('quiz-btn');
 const quizBox = document.getElementById('quiz-box');
@@ -17,7 +19,7 @@ closeBtn.addEventListener('click', function () {
     quizBox.classList.add('hidden');
 });
 
-// check the answer
+// check the answer, only Pluto is correct
 answerButtons.forEach(function (button) {
     button.addEventListener('click', function () {
         if (button.textContent === 'Pluto') {

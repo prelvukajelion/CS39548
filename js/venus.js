@@ -1,3 +1,5 @@
+// Venus page: button that opens a pop-up with a fun fact
+
 // get the elements
 const factBtn = document.getElementById('fact-btn');
 const factModal = document.getElementById('fact-modal');

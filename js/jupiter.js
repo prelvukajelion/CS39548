@@ -1,3 +1,5 @@
+// Jupiter page: button that shows a random fact
+
 // list of facts to pick from
 const jupiterFacts = [
     'Jupiter is more than twice as massive as all the other planets combined.',
@@ -13,6 +15,7 @@ const randomFact = document.getElementById('random-fact');
 
 // show a random fact
 randomBtn.addEventListener('click', function () {
+    // pick a random position in the list
     const index = Math.floor(Math.random() * jupiterFacts.length);
     randomFact.textContent = jupiterFacts[index];
 });

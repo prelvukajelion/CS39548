@@ -60,6 +60,7 @@ body {
     line-height: 1.6;
 }
 
+/* row that holds the three photos */
 .photos {
     display: flex;
     justify-content: center;
@@ -69,11 +70,13 @@ body {
     margin: 20px 0;
 }
 
+/* big photo in the middle */
 .photo {
     width: 320px;
     max-width: 100%;
 }
 
+/* smaller photos on the left and right */
 .side-photo {
     width: 200px;
     height: 200px;
@@ -148,7 +151,7 @@ body.neptune {
     font-family: Tahoma, sans-serif;
 }
 
-/* heading colors */
+/* heading colors, each one matches its planet */
 body.sun h1, body.sun h2         { color: #ffd34d; }
 body.moon h1, body.moon h2       { color: #cfcfcf; }
 body.earth h1, body.earth h2     { color: #7fc8f8; }
@@ -217,7 +220,7 @@ body.neptune h1, body.neptune h2 { color: #9fc2ff; }
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
 }
 
-/* animations that the buttons turn on and off */
+/* animations that the buttons turn on and off, spin is used on the Earth page and glow on the Sun page */
 @keyframes spin {
     to { transform: rotate(360deg); }
 }

@@ -1,3 +1,5 @@
+// Earth page: Start and Stop buttons for spinning the Earth photo
+
 // get the elements
 const spinStart = document.getElementById('spin-start');
 const spinStop = document.getElementById('spin-stop');
