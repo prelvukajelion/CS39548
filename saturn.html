@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saturn</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/saturn.js" defer></script>
 </head>
 <body class="saturn">
 
@@ -30,10 +31,14 @@
         <!-- three photos in one row -->
         <div class="photos">
             <img class="side-photo" src="images/saturn-left.png" alt="Infrared close-up of the hexagon-shaped storm at Saturn's north pole">
-            <img class="photo" src="images/saturn1.png" alt="Saturn and its rings photographed by the Cassini spacecraft">
+            <img id="main-photo" class="photo" src="images/saturn1.png" alt="Saturn and its rings photographed by the Cassini spacecraft">
             <img class="side-photo" src="images/saturn-right.png" alt="Saturn and its dark rings seen from above">
         </div>
 
+        <!-- JavaScript feature -->
+        <div class="feature">
+            <button id="zoom-btn" type="button">Zoom in</button>
+        </div>
         <h2>Facts about Saturn</h2>
         <ul class="facts">
             <li>Diameter: about 116,460 km</li>

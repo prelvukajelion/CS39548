@@ -236,3 +236,12 @@ body.neptune h1, body.neptune h2 { color: #9fc2ff; }
 .spinning {
     animation: spin 8s linear infinite;
 }
+
+/* saturn zoom */
+#main-photo {
+    transition: transform 0.4s ease;
+}
+
+#main-photo.zoomed {
+    transform: scale(1.4);
+}
