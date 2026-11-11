@@ -231,3 +231,8 @@ body.neptune h1, body.neptune h2 { color: #9fc2ff; }
 .glowing {
     animation: glow 1s ease-in-out infinite alternate;
 }
+
+/* earth spin animation */
+.spinning {
+    animation: spin 8s linear infinite;
+}

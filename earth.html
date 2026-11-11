@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Earth</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/earth.js" defer></script>
 </head>
 <body class="earth">
 
@@ -30,10 +31,15 @@
         <!-- three photos in one row -->
         <div class="photos">
             <img class="side-photo" src="images/earth-left.png" alt="The eye of a hurricane seen from space">
-            <img class="photo" src="images/earth1.png" alt="Earth seen from space showing the Americas, blue oceans and white clouds">
+            <img id="main-photo" class="photo" src="images/earth1.png" alt="Earth seen from space showing the Americas, blue oceans and white clouds">
             <img class="side-photo" src="images/earth-right.png" alt="Green and red aurora glowing above Earth's horizon">
         </div>
 
+        <!-- JavaScript feature -->
+        <div class="feature">
+            <button id="spin-start" type="button">Start spinning</button>
+            <button id="spin-stop" type="button">Stop</button>
+        </div>
         <h2>Facts about Earth</h2>
         <ul class="facts">
             <li>Diameter: about 12,742 km</li>
