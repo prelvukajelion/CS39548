@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neptune</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/neptune.js" defer></script>
 </head>
 <body class="neptune">
 
@@ -30,10 +31,15 @@
         <!-- three photos in one row -->
         <div class="photos">
             <img class="side-photo" src="images/neptune-left.png" alt="Neptune and its faint rings seen by the James Webb Space Telescope">
-            <img class="photo" src="images/neptune1.png" alt="Neptune as a deep blue planet with white clouds">
+            <img id="main-photo" class="photo" src="images/neptune1.png" alt="Neptune as a deep blue planet with white clouds">
             <img class="side-photo" src="images/neptune-right.png" alt="The Great Dark Spot storm on Neptune">
         </div>
 
+        <!-- JavaScript feature -->
+        <div class="feature">
+            <button id="wind-btn" type="button">Measure wind speed</button>
+            <p id="wind-speed" class="output">0 km/h</p>
+        </div>
         <h2>Facts about Neptune</h2>
         <ul class="facts">
             <li>Diameter: about 49,244 km</li>
