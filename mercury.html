@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercury</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/mercury.js" defer></script>
 </head>
 <body class="mercury">
 
@@ -30,10 +31,15 @@
         <!-- three photos in one row -->
         <div class="photos">
             <img class="side-photo" src="images/mercury-left.png" alt="Enhanced color close-up of craters on Mercury">
-            <img class="photo" src="images/mercury1.png" alt="Mercury in true color, a gray cratered planet">
+            <img id="main-photo" class="photo" src="images/mercury1.png" alt="Mercury in true color, a gray cratered planet">
             <img class="side-photo" src="images/mercury-right.png" alt="A blue crater on Mercury with a bright patch of rock beside it">
         </div>
 
+        <!-- JavaScript feature -->
+        <div class="feature">
+            <button id="more-btn" type="button">Read more</button>
+            <p id="more-text" class="hidden">Mercury has almost no atmosphere to hold in heat, so the side facing the Sun reaches about 430 °C while the night side drops to about -180 °C.</p>
+        </div>
         <h2>Facts about Mercury</h2>
         <ul class="facts">
             <li>Diameter: about 4,879 km, the smallest planet</li>
