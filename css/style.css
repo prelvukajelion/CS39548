@@ -245,3 +245,11 @@ body.neptune h1, body.neptune h2 { color: #9fc2ff; }
 #main-photo.zoomed {
     transform: scale(1.4);
 }
+
+/* uranus light theme */
+body.uranus.light {
+    background-image: linear-gradient(rgba(215, 248, 248, 0.85), rgba(215, 248, 248, 0.85)), url('../images/uranus-bg.jpg');
+    color: #0f3333;
+}
+
+body.uranus.light h1, body.uranus.light h2 { color: #0f5a5a; }

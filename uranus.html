@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uranus</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/uranus.js" defer></script>
 </head>
 <body class="uranus">
 
@@ -30,10 +31,14 @@
         <!-- three photos in one row -->
         <div class="photos">
             <img class="side-photo" src="images/uranus-left.png" alt="Uranus and its rings seen by the James Webb Space Telescope">
-            <img class="photo" src="images/uranus1.png" alt="Uranus as a pale blue-green sphere">
+            <img id="main-photo" class="photo" src="images/uranus1.png" alt="Uranus as a pale blue-green sphere">
             <img class="side-photo" src="images/uranus-right.png" alt="Uranus as a pale blue-green sphere seen by Voyager 2">
         </div>
 
+        <!-- JavaScript feature -->
+        <div class="feature">
+            <button id="theme-btn" type="button">Switch to light theme</button>
+        </div>
         <h2>Facts about Uranus</h2>
         <ul class="facts">
             <li>Diameter: about 50,724 km</li>
