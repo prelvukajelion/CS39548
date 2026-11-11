@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jupiter</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jupiter.js" defer></script>
 </head>
 <body class="jupiter">
 
@@ -30,10 +31,15 @@
         <!-- three photos in one row -->
         <div class="photos">
             <img class="side-photo" src="images/jupiter-left.png" alt="Close-up of Jupiter's swirling clouds and the Great Red Spot">
-            <img class="photo" src="images/jupiter1.png" alt="Jupiter with its Great Red Spot and bands of orange and white clouds">
+            <img id="main-photo" class="photo" src="images/jupiter1.png" alt="Jupiter with its Great Red Spot and bands of orange and white clouds">
             <img class="side-photo" src="images/jupiter-right.png" alt="Swirling storms around Jupiter's south pole">
         </div>
 
+        <!-- JavaScript feature -->
+        <div class="feature">
+            <button id="random-btn" type="button">Random fact</button>
+            <p id="random-fact" class="output"></p>
+        </div>
         <h2>Facts about Jupiter</h2>
         <ul class="facts">
             <li>Diameter: about 139,820 km, more than 1,300 Earths could fit inside it</li>
