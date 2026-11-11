@@ -159,3 +159,70 @@ body.jupiter h1, body.jupiter h2 { color: #e3bd8d; }
 body.saturn h1, body.saturn h2   { color: #f1e2ab; }
 body.uranus h1, body.uranus h2   { color: #a8eaea; }
 body.neptune h1, body.neptune h2 { color: #9fc2ff; }
+
+/* hides an element until a button shows it */
+.hidden {
+    display: none;
+}
+
+/* box that holds each page's JavaScript feature */
+.feature {
+    max-width: 560px;
+    margin: 30px auto;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.feature button {
+    margin: 4px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    background: #f2d9a0;
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.feature button:hover {
+    background: #ffe9b8;
+}
+
+.feature input {
+    width: 100px;
+    padding: 6px;
+    font-size: 1rem;
+}
+
+.feature .output {
+    min-height: 1.5em;
+    font-weight: bold;
+}
+
+/* pop-up box, used on the Venus page */
+.modal {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #2a1d08;
+    border: 2px solid #f2d9a0;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+}
+
+/* animations that the buttons turn on and off */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes glow {
+    from { filter: drop-shadow(0 0 10px #ffd34d); }
+    to   { filter: drop-shadow(0 0 45px #ff9d00); }
+}
